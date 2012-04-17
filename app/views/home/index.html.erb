@@ -5,3 +5,21 @@
 
 <p>YOu gotcha be kidding me RUBY!</p>
 
+<hr/>
+<h3>RADIO BUTTONS:</h3>
+<%= radio_button_tag(:age, "child") %>
+<%= label_tag(:age_child, "I am younger than 21") %>
+<%= radio_button_tag(:age, "adult") %>
+<%= label_tag(:age_adult, "I'm over 21") %>
+
+
+<hr/>
+<h3>OTHER HELPERS OF INTEREST:</h3>
+<%= text_area_tag(:message, "Hi, nice site", :size => "24x6") %>
+<%= password_field_tag(:password, '', :placeholder => "user password") %>
+<%= hidden_field_tag(:parent_id, "5") %>
+<%= search_field(:user, :name, :placeholder => "user name") %>
+<%= telephone_field(:user, :phone, :placeholder => "user phone") %>
+<%= url_field(:user, :homepage, :placeholder => "user homepage") %>
+<%= email_field(:user, :address, :placeholder => "user email address") %>
+
